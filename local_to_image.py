@@ -13,9 +13,9 @@ check_point_stability = "stabilityai/stable-diffusion-2-1"
 # Use the DPMSolverMultistepScheduler (DPM-Solver++) scheduler here instead
 #torch_dtype=torch.float32 si le GPU n'est pas disponible
 #torch_dtype=torch.float16 si le GPU est disponible
-pipe = StableDiffusionPipeline.from_pretrained(check_point_stability, torch_dtype=torch.float16)
+pipe = StableDiffusionPipeline.from_pretrained(check_point_stability, torch_dtype=torch.float32)
 pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
-pipe = pipe.to("cuda")
+#pipe = pipe.to("cuda")
 
 
 check_point_fon_translate = "kingabzpro/Helsinki-NLP-opus-yor-mul-en"
