@@ -1,0 +1,7 @@
+datasets
+diffusers
+transformers
+accelerate
+scipy
+safetensors
+ipywidgets
