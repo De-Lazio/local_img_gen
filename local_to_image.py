@@ -4,8 +4,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
 
-import ipywidgets as widgets
-from IPython.display import display
+#import ipywidgets as widgets
+#from IPython.display import display
 
 
 check_point_stability = "stabilityai/stable-diffusion-2-1"
@@ -63,7 +63,7 @@ print(translate_sentent)
 
 gen_img_yor_text(phrase_yoruba)
 """
-
+"""
 # Define font and colors
 LARGE_FONT = ("Verdana", 16)
 BUTTON_FONT = ("Verdana", 12)
@@ -133,4 +133,4 @@ fon_to_french_button.on_click(lambda button: translate_text("fon"))
 yoruba_image_button.on_click(lambda button: generate_image("yoruba"))
 fon_image_button.on_click(lambda button: generate_image("fon"))
 
-display(root)
+display(root)"""
