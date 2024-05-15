@@ -5,3 +5,5 @@ accelerate
 scipy
 safetensors
 ipywidgets
+streamlit
+sentencepiece
