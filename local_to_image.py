@@ -4,8 +4,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
 
-#import ipywidgets as widgets
-#from IPython.display import display
+import ipywidgets as widgets
+from IPython.display import display
 
 
 check_point_stability = "stabilityai/stable-diffusion-2-1"
@@ -56,7 +56,7 @@ def gen_img_yor_text(phrase_yoruba):
   image = pipe(traduction_dechiffree).images[0]
 
   image.save("new_img.png")
-"""
+
 phrase_yoruba = "Aworan ti ile-iwe pẹlu awọn ọmọ ile-iwe"
 translate_sentent = translate_yor_en(phrase_yoruba)
 print(translate_sentent)
@@ -133,4 +133,4 @@ fon_to_french_button.on_click(lambda button: translate_text("fon"))
 yoruba_image_button.on_click(lambda button: generate_image("yoruba"))
 fon_image_button.on_click(lambda button: generate_image("fon"))
 
-display(root)"""
+display(root)
